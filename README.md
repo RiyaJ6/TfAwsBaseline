@@ -27,16 +27,16 @@ with proper variable validation, environment drift prevention and CI guardrails.
 
 ```
 TfAwsBaseline/
-├── main.tf            # resource definitions
-├── variables.tf       # all inputs with types, defaults, and validation blocks
-├── outputs.tf         # outputs consumed by dependent modules
-├── examples/
-│   └── basic/
-│       ├── main.tf    # example showing module usage
 ├── .github/
 │   └── workflows/
-│       └── terraform-plan.yaml   # runs terraform plan on every PR
-└── README.md
+│       └── terraform-plan.yaml      # runs terraform plan on every PR     
+├── examples/
+│   └── basic/
+│       ├── main.tf    # example showing module usage      
+├── README.md       
+├── main.tf   # resource definitions  
+├── outputs.tf   # outputs consumed by dependent modules
+└── variables.tf  # all inputs with types, defaults, and validation blocks
 ```
 
 ---
